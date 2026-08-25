@@ -8,6 +8,13 @@
   background-color: lightblue;
 }
 
+.poducts_parents{
+  border : 2 px solid balck;
+  border-radius: 5px;
+  padding : 10px;
+  background-color: rgb(140, 192, 140);
+}
+
 .product-cart{
   border : 2px solid black;
   border-radius: 5px;
