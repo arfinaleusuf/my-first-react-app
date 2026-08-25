@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import Welcome from './welcome.jsx'
 import Greetings from './Greetings.jsx'
+import ProductCart from './ProductCart.jsx'
 
 
 
@@ -14,5 +15,7 @@ createRoot(document.getElementById('root')).render(
     <Welcome />
     <Greetings greet={"Good Morning"} name={"Phitron"}/>
     <Greetings greet={"Good Evening"} name={"Meta"}/>
+    <ProductCart title={"leptop"} price={45000} isStock={true}/>
+    <ProductCart title={"Phone"} price={25000} isStock={false}/>
   </StrictMode>,
 )

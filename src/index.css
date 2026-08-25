@@ -7,3 +7,10 @@
   padding: 10px;
   background-color: lightblue;
 }
+
+.product-cart{
+    border : 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: lightgreen;
+}
