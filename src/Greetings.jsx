@@ -1,4 +1,4 @@
-const Greetings = ({greet, name}) => {
+const Greetings = ({greet="Hello", name="Phitron"}) => {
    
     const currentYear = new Date().getFullYear()
     return (
