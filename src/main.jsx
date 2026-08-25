@@ -12,6 +12,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Welcome></Welcome> */}
     <Welcome></Welcome>
     <Welcome />
-    <Greetings/>
+    <Greetings greet={"Good Morning"} name={"Phitron"}/>
+    <Greetings greet={"Good Evening"} name={"Meta"}/>
   </StrictMode>,
 )
