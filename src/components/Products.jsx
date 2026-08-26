@@ -46,10 +46,16 @@ const Products = () => {
         <div className='poducts_parents'>
             <h2>All Products</h2>
 
-            {products.length == 0 ? <h2>Products not available !!</h2> : products.map((pd) => {
-                return <ProductCart key={pd.name} product={pd} />
-            })
-            }
+            {products.length == 0 ? (
+                <h2>Products not available !!</h2>
+            ) : (
+                <div className="products">
+                    {products.map((pd, ind) => {
+                        console.log(ind, "ind")
+                        return <ProductCart key={ind} product={pd} />
+                    })}
+                </div>
+            )}
         </div>
     );
 };
