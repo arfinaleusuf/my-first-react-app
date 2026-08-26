@@ -19,7 +19,6 @@ const ProductCart = ({product}) => {
         alert(`${name} purchased Successfully`)
     }
 
-    console.log(count, setCount)
     return (
         <div className="product-cart">
             <h2>Title: {name}</h2>

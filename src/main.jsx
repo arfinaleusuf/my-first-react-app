@@ -4,6 +4,7 @@ import './index.css'
 import Welcome from './components/Welcome.jsx'
 import Greetings from './components/Greetings.jsx'
 import Products from './components/Products.jsx'
+import MoodTracker from './components/moodTracker.jsx'
 
 
 
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
     isLogedIn ={true} 
     specialMessege={"somethong"}/>}
 
+    <MoodTracker/>
     <Products />
 
   </StrictMode>,

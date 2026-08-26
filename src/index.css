@@ -45,3 +45,30 @@
   font-size: 16px;
   padding: 10px, 20px;
 }
+
+.mood-tracker-parent{
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(184,186,184);
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.emoji-parent{
+  display: flex;
+  gap: 10px;
+}
+.emoji-btn{
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+}
+.emoji-btn:hover{
+  transform: scale(1.2);
+}
