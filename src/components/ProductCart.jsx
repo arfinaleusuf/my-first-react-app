@@ -1,6 +1,9 @@
+import { useState } from "react";
 
 const ProductCart = ({product}) => {
     const {name, description,price, isStock} = product
+
+    const [count, setCount] = useState(0)
 
     const addToCartHandler = (e) => {
         console.log(e,"e");
@@ -14,6 +17,7 @@ const ProductCart = ({product}) => {
         alert(`${name} purchased Successfully`)
     }
 
+    console.log(count, setCount)
     return (
         <div className="product-cart">
             <h2>Title: {name}</h2>
@@ -22,6 +26,8 @@ const ProductCart = ({product}) => {
             <h2>Is Stock: {isStock ? "Stock available" : "Stock Not available"}</h2>
             <button onClick={(event) =>addToCartHandler(event)}>Add to cart</button>
             <button onClick={(event)=>buyNowHander(event)}>Buy Now</button>
+            <h2>count: {count}</h2>
+            <button onClick={()=>setCount(count + 1)}>Increment count</button>
         </div>
     );
 };
